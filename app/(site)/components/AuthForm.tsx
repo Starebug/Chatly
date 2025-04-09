@@ -72,7 +72,7 @@ const AuthForm = () => {
           }
 
           if (res?.ok && !res?.error) {
-            toast.success('Entering Nexus!');
+            toast.success('Entering Chatly');
             router.push('/users');
           }
         })
@@ -92,7 +92,7 @@ const AuthForm = () => {
         }
 
         if (res?.ok && !res?.error) {
-          toast.success('Entering Nexus!');
+          toast.success('Entering Chatly!');
         }
       })
       .finally(() => setIsLoading(false));
@@ -171,7 +171,7 @@ const AuthForm = () => {
           <span>
             {variant === 'REGISTER'
               ? 'Already have an account?'
-              : 'New to Nexus?'}
+              : 'New to Chatly?'}
           </span>
           <button
             type="button"
